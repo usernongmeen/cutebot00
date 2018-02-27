@@ -11,7 +11,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			// Get room id
-			$room = $event['source']['groupId']
+			$room = $event['source']['groupId'];
 			// Get user profile
 			$profile = $event['source']['userId'];
 			// Get text sent
